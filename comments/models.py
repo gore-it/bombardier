@@ -1,12 +1,11 @@
 from django.db import models
-
-from accounts.models import Account
+from django.contrib.auth.models import User
 
 
 class Comment(models.Model):
     title = models.CharField(max_length=64)
     text = models.TextField(max_length=1024)
-    account = models.ForeignKey(Account)
+    account = models.ForeignKey(User)
     publication_date = models.DateTimeField(auto_created=True, blank=True, null=True)
 
     def __unicode__(self):

@@ -6,5 +6,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 
     url(r'^$', 'bombardier.views.home', name='home'),
+    (r'^accounts/login/$', 'django.contrib.auth.views.login', {'template_name': 'bombardier/registration/login.html'}),
+
     url(r'^admin/', include(admin.site.urls)),
 )
