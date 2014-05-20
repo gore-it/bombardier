@@ -88,5 +88,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
-    '/home/django/bombardier/templates',
+    '/home/gore/django/bombardier/templates',
 )
