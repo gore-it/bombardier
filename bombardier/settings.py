@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'comments',
+    'news',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -46,7 +46,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
 ROOT_URLCONF = 'bombardier.urls'
@@ -60,9 +59,9 @@ WSGI_APPLICATION = 'bombardier.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'bombardier',                      # Or path to database file if using sqlite3.
-        'USER': 'admin',                      # Not used with sqlite3.
-        'PASSWORD': 'admin',                  # Not used with sqlite3.
+        'NAME': 'gore_bombardier',                      # Or path to database file if using sqlite3.
+        'USER': 'gore_admin',                      # Not used with sqlite3.
+        'PASSWORD': 'wrhxkjb9',                  # Not used with sqlite3.
         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -71,9 +70,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'pl'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Warsaw'
 
 USE_I18N = True
 
@@ -87,6 +86,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+print(BASE_DIR + '/templates')
+
 TEMPLATE_DIRS = (
-    '/home/gore/django/bombardier/templates',
+    BASE_DIR + '/templates',
 )
