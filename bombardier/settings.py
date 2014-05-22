@@ -62,7 +62,7 @@ DATABASES = {
         'NAME': 'gore_bombardier',                      # Or path to database file if using sqlite3.
         'USER': 'gore_admin',                      # Not used with sqlite3.
         'PASSWORD': 'wrhxkjb9',                  # Not used with sqlite3.
-        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'HOST': 'pgsql92.intertele.pl',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
