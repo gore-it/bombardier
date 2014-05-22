@@ -50,8 +50,6 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'bombardier.urls'
 
-WSGI_APPLICATION = 'bombardier.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
