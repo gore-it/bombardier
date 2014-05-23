@@ -84,8 +84,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-print(BASE_DIR + '/templates')
-
 TEMPLATE_DIRS = (
     BASE_DIR + '/templates',
 )
