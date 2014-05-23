@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/www/virtual/g/gore/python26
 import sys, os
 
 # Add a custom Python path.
