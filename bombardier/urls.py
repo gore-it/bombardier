@@ -5,7 +5,13 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 
-    url(r'^$', 'bombardier.views.news', name='news'),
+    url(r'^$', 'news.views.news', name='news'),
+    url(r'^news$', 'news.views.news', name='news'),
+    url(r'^zawodnicy$', 'news.views.news', name='news'),
+    url(r'^terminy$', 'news.views.news', name='news'),
+    url(r'^galeria', 'news.views.news', name='news'),
+    url(r'^kontakt$', 'news.views.news', name='news'),
+
     (r'^accounts/login/$', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),
 
     url(r'^admin/', include(admin.site.urls)),

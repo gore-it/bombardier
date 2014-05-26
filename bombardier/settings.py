@@ -83,7 +83,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-print(BASE_DIR + '/templates')
+print os.path.join(BASE_DIR, "static")
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
 
 TEMPLATE_DIRS = (
     BASE_DIR + '/templates',

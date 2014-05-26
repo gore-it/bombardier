@@ -16,6 +16,7 @@ class Comment(models.Model):
     title = models.CharField(max_length=64)
     text = models.TextField(max_length=1024)
     account = models.ForeignKey(User)
+    news = models.ForeignKey(News)
     publication_date = models.DateTimeField(auto_created=True, blank=True, null=True)
 
     def __unicode__(self):

@@ -2,6 +2,13 @@
 
 {% block content %}
 
-<p>Teraz jest {{ current_date }}.</p>
+<div class="centered"><p>Aktualności</p></div>
+
+{% for news_tem in news %}
+   <div class="news">
+        <p>{{ news_tem }}</p>
+   </div>
+{% endfor %}
+
 
 {% endblock %}

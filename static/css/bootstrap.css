@@ -61,6 +61,17 @@ video {
   *zoom: 1;
 }
 
+.centered{
+    margin: 0auto;
+}
+
+.news{
+    border: 1px solid #999;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 audio:not([controls]) {
   display: none;
 }
