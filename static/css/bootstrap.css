@@ -62,14 +62,13 @@ video {
 }
 
 .centered{
-    margin: 0auto;
+    text-align: center;
 }
 
 .news{
     border: 1px solid #999;
     padding: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 audio:not([controls]) {

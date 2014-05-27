@@ -1,9 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block content %}
+
+<div class="centered"><h2>Zawodnicy</h2></div>
+
+{% for competitor_item in competitors %}
+   <div class="news">
+       <p>Foto: </p>
+       <p>Imie i nazwisko: </p>
+       <p>Wiek: </p>
+       <p>Osiągnięcia: </p>
+       <p>Opis: </p>
+       <br />
+   </div>
+{% endfor %}
+
+
+{% endblock %}
