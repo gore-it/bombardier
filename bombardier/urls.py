@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     url(r'^zawodnicy$', 'competitors.views.show', name='competitors'),
     url(r'^terminy$', TemplateView.as_view(template_name='timetable/timetable.html'), name="timetable"),
     url(r'^galeria', 'news.views.show', name='news'),
-    url(r'^kontakt$', 'news.views.show', name='news'),
+    url(r'^kontakt$', 'contact.views.contact', name='news'),
 
     (r'^accounts/login/$', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),
     url(r'^admin/', include(admin.site.urls)),
