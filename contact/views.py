@@ -14,7 +14,7 @@ def contact(request):
                 cd['subject'],
                 cd['message'],
                 cd['email'],
-                ['admin@bombardier.net.pl'],
+                ['goreminion1@gmail.com'],
             )
             return HttpResponseRedirect('/kontakt')
     else:
