@@ -96,7 +96,7 @@ TEMPLATE_DIRS = (
     BASE_DIR + '/templates',
 )
 
-EMAIL_HOST = 'mail.intertele.pl'
+EMAIL_HOST = 'smtp.intertele.pl'
 EMAIL_HOST_USER = 'admin@bombardier.net.pl'
 EMAIL_HOST_PASSWORD = 'wrhxkjb9'
 EMAIL_PORT = 587
