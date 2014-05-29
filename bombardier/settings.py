@@ -89,7 +89,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
-print os.path.join(BASE_DIR, "static")
+SITE_ID = 1
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
