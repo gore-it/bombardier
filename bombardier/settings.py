@@ -21,9 +21,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '@he)!@p7r@upzi-m28vee9(%sf%z(e!+0$no2(v-rwa9&jk=xw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -38,11 +38,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'photologue',
     'news',
     'competitors',
-    'south',
-    'sortedm2m',
+    'contact',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -100,7 +98,7 @@ TEMPLATE_DIRS = (
 )
 
 EMAIL_HOST = 'smtp.intertele.pl'
-EMAIL_HOST_USER = 'admin@bombardier.net.pl'
+EMAIL_HOST_USER = 'gore'
 EMAIL_HOST_PASSWORD = 'wrhxkjb9'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
